@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasión Futbolera - David Cespedes</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eceff1;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #1b5e20;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .logo p {
+            margin: 0;
+            font-size: 12px;
+            color: #a5d6a7;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a5d6a7;
+        }
+
+        .hero {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2e7d32;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            color: #1b5e20;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            max-width: 600px;
+        }
+
+        .hero img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .contenido {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            flex: 1;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid #2e7d32;
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        .tarjeta h3 {
+            color: #1b5e20;
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #263238;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            .grid-info {
+                flex-direction: column;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Mundo Fútbol</h1>
+            <p>Proyecto Final - David Cespedes</p>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#info">Info</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h2>Bienvenidos a mi sitio oficial</h2>
+        <p>Este es el resultado de todo lo aprendido en el curso de diseño web. Una landing page dedicada a la pasión más grande del mundo.</p>
+        
+        <img src="https://www.venus.com.pe/wp-content/uploads/2025/05/PORTADA-NOTA-2-2.jpg" alt="[Cancha de fútbol]">
+    </section>
+
+    <main id="info" class="contenido">
+        <div class="grid-info">
+            <div class="tarjeta">
+                <h3>Técnica</h3>
+                <p>Aprender los fundamentos es clave para cualquier jugador que quiera llegar a primera.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Estrategia</h3>
+                <p>El fútbol no es solo 11 jugadore corriendo con una pelota tambien tenes que tener inteligencia táctica y mucha disciplina en la cancha.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Esfuerzo = Pasion</h3>
+                <p>No todo es talento, el entrenamiento diario es lo que hace la verdadera diferencia. Y ademas si jugas con el corazon, con toda la garra y pasion siempre vas a ser un muy buen jugador</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <p>Diseñado por <strong>David Cespedes</strong></p>
+        <p>&copy; 2026 - Curso de Diseño Web Final</p>
+    </footer>
+
+</body>
+</html>
